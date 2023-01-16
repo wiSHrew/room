@@ -58,6 +58,7 @@ Ceil.position.x = 0;
 Ceil.position.y = 3;
 Ceil.position.z = 0;
 
+//bed
 
 const AmbientLight = new THREE.AmbientLight( 0x404040 ); // soft white light
 scene.add( AmbientLight );
