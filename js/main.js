@@ -88,6 +88,7 @@ scene.add( chair );
 chair.position.x = -2;
 chair.position.y = -2;
 chair.position.z = 0;
+
 const chairBackRestG = new THREE.BoxGeometry( 1, 5, .1 );
 const chairBackRestM = new THREE.MeshStandardMaterial({color: 0xECECEC});
 const chairBackRest = new THREE.Mesh( chairBackRestG, chairBackRestM );
@@ -124,6 +125,17 @@ scene.add( laptopScreenLight );
 laptopScreenLight.position.x = -1;
 laptopScreenLight.position.y = 0;
 laptopScreenLight.position.z = -1.5;
+
+
+//window
+const windowGlassG = new THREE.BoxGeometry( 6.5, 2.5, 1.1 );
+const windowGlassM = new THREE.MeshStandardMaterial({color: 0xAEFEFF});
+const windowGlass = new THREE.Mesh( windowGlassG, windowGlassM );
+windowGlass.receiveShadow = true;
+scene.add( windowGlass );
+windowGlass.position.x = -1;
+windowGlass.position.y = .85;
+windowGlass.position.z = -2.05;
 
 
 const AmbientLight = new THREE.AmbientLight( 0x404040 ); // soft white light
